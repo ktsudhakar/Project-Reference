@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+	.custom-menu .dropdown-header {
+  color: #375ada;
+  font-weight: 400;
+  font-size: inherit;
+}
+
+/*Sidebar CSS*/
+.slide-in .sidebar {
+  width: 48px;
+}
+
+.fa-minus-circle {
+  display: none;
+}
+
+.show .fa-minus-circle {
+  display: block;
+}
+
+.active .fa-plus-circle {
+  display: none;
+}
+
+.active .fa-minus-circle {
+  display: block;
+}
+
+.sidebar {
+  background-color: #234271;
+  transition: width ease 0.5s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  position: fixed;
+  width: 250px;
+  top: 0px;
+  left: 0px;
+  z-index: 99999;
+}
+
+ul.sidemenu {
+  padding: 0;
+  margin: 0;
+}
+
+ul.sidemenu li {
+  list-style-type: none;
+}
+
+ul.sidemenu li a {
+  background-color: #1f3352;
+  padding: 10px 25px 10px 40px;
+  transition: all ease 0.5s;
+  position: relative;
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #0f1c2f;
+}
+
+ul.sidemenu > li > a.active {
+  background-color: #1f3352;
+  border-bottom: 1px solid transparent;
+}
+
+ul.sidemenu li a:hover {
+  text-decoration: none;
+}
+
+ul.sidemenu li > a:not(.active):hover {
+  background-color: #234271;
+}
+
+ul.sidemenu li a .drop-arrow {
+  transition: all ease 0.5s;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+ul.sidemenu li a .drop-arrow {
+  right: 21px;
+}
+
+ul.sidemenu li a .drop-arrow img {
+  width: 10px;
+}
+
+/* ul.sidemenu li a.active .drop-arrow {
+    transform: rotate(-180deg);
+} */
+
+ul.sidemenu ul {
+  padding: 0;
+  display: none;
+}
+
+ul.sidemenu ul li a {
+  padding-left: 55px;
+  margin-bottom: 0px;
+  background-color: #234271;
+  border-bottom: 1px solid transparent;
+}
+
+ul.sidemenu ul > li > a:hover {
+  background-color: #315080 !important;
+}
+</style>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2>Search Results</h2>
+                <div class="form-group">
+                    <select>
+                        <option>Select</option>
+                        <option>Select</option>
+                        <option>Select</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                    <nav class="navbar navbar-expand-sm justify-content-end">
+                        <!-- Links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown dropdown-toggle" data-toggle="dropdown" href="#">Property</a>
+                                <div class="dropdown-menu dropdown-menu-right custom-menu col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a class="dropdown-item" href="#">Natoque pellentesque</a>
+                                            <a class="dropdown-item" href="#">Imperdiet lorem suspendisse</a>
+                                            <a class="dropdown-item" href="#">Integer sed habitant consectetur</a>
+                                            <div class="dropdown-divider"></div>
+                                            <h6 class="dropdown-header">Dropdown header</h6>
+                                            <a class="dropdown-item" href="#">Tincidunt</a>
+                                            <a class="dropdown-item" href="#">Natoque pellentesque</a>
+                                            <a class="dropdown-item" href="#">Ante</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a class="dropdown-item" href="#">Ante</a>
+                                            <a class="dropdown-item" href="#">Sollicitudin</a>
+                                            <a class="dropdown-item" href="#">Natoque pellentesque</a>
+                                            <div class="dropdown-divider"></div>
+                                            <h6 class="dropdown-header">Dropdown header</h6>
+                                            <a class="dropdown-item" href="#">Sollicitudin</a>
+                                            <a class="dropdown-item" href="#">Ullamcorper ridiculus</a>
+                                            <a class="dropdown-item" href="#">Auctor</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a class="dropdown-item" href="#">Ullamcorper ridiculus</a>
+                                            <a class="dropdown-item" href="#">Vestibulum</a>
+                                            <div class="dropdown-divider"></div>
+                                            <h6 class="dropdown-header">Dropdown header</h6>
+                                            <a class="dropdown-item" href="#">Sollicitudin</a>
+                                            <a class="dropdown-item" href="#">Adipiscing</a>
+                                            <div class="dropdown-divider"></div>
+                                            <h6 class="dropdown-header">Dropdown header</h6>
+                                            <a class="dropdown-item" href="#">Sollicitudin</a>
+                                            <a class="dropdown-item" href="#">Auctor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Welcome Sudhakar KT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Signout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <ul class="sidemenu">
+                            <li>
+                                <a href="javascript:void(0);" class=""><span class="menu-item">Customer</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="javascript:void(0);" class=""><span class="menu-item">Master</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                        <ul class="submenu" style="display: none;">
+                                            <li><a href="javascript:void(0);" class=""><span class="menu-item">Submenu 1</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                                <ul class="submenu" style="display: none;">
+                                                    <li><a href="javascript:void(0);" class=""><span class="menu-item">Submenu 1</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a></li>
+                                                    <li><a href="javascript:void(0);"><span class="menu-item">Submenu 2</span></a></li>
+                                                    <li><a href="javascript:void(0);"><span class="menu-item">Submenu 3</span></a></li>
+                                                    <li><a href="javascript:void(0);"><span class="menu-item">Customer Location</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:void(0);"><span class="menu-item">Submenu 2</span></a></li>
+                                            <li><a href="javascript:void(0);"><span class="menu-item">Submenu 3</span></a></li>
+                                            <li><a href="javascript:void(0);"><span class="menu-item">Customer Location</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Customers</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Customer Category</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Customer Location</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><span class="menu-item">Employee</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                <ul>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Employee</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Employee Category</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><span class="menu-item">Product</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                <ul>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Product</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Product Category</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><span class="menu-item">Sales</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                <ul>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Country Targets</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Ration Targets</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Sales Booking</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Payment Booking</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><span class="menu-item">Organization</span><span class="drop-arrow"><i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></span></a>
+                                <ul>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Branches</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Organization</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Region Master</span></a></li>
+                                    <li><a href="javascript:void(0);"><span class="menu-item">Overall Region</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><span class="menu-item">Task Summary</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);"><span class="menu-item">Feedback Questions</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <h4>1</h4>
+                        </div>
+                        <div class="item">
+                            <h4>2</h4>
+                        </div>
+                        <div class="item">
+                            <h4>3</h4>
+                        </div>
+                    </div>
+                    <a class="button secondary play">Play</a> 
+                    <a class="button secondary stop">Stop</a> 
+                </div>
+            </div>
+    </div>
+    </header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidebar li a').click(function() {
+                $(this).toggleClass("active").next('ul').slideToggle(250).closest('li').siblings().find('a').removeClass('active').next('ul').slideUp(250);
+            });
+        });
+        var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                dots: true,
+                nav: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              });
+    </script>
+</body>
+
+</html>

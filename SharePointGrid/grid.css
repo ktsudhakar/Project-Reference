@@ -1,0 +1,152 @@
+body {
+    color: #333;
+    font-family: "Segoe UI Web (West European)",Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 14px;
+}
+
+button {
+    color: #333;
+}
+
+/*Drag and Drop Overwrite CSS Starts Here*/
+div[class*="gridParentTaskInner"], div[class*="gridParentTaskInner"], div[class*="gridRow"],
+div[class*="gridParentTaskInner"] *, div[class*="gridParentTaskInner"] *, div[class*="gridRow"] * {
+  box-sizing: border-box;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"],
+div[class*="gridRow"] {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #e6e6e7;
+  font-family: "Segoe UI Web (West European)",Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  box-shadow: 1px 0 3px rgba(0,0,0,0.25);
+  background-color: #f8f6f6;
+}
+
+div[class*="gridRow"] i {
+  color: #3292dc;
+}
+
+body>div[class*=gridRow] span[class*=gridMoveIcon] i {
+  color: #c7c7c7 !important;
+  font-size: 18px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"],
+div[class*="gridRow"] > div[class*="gridCell"] {
+	align-self: stretch;
+	padding: 11px 8px 11px 12px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > span[class*="gridOrderNumber"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > span[class*="gridOrderNumber"],
+div[class*="gridRow"] > div[class*="gridCell"] > span[class*="gridOrderNumber"] {
+  display: block;
+  padding-right: 20px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCheckbox"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCheckbox"],
+div[class*="gridRow"] > div[class*="gridCheckbox"] {
+	width: 30px;
+	max-width: 30px;
+	min-width: 30px!important;
+	padding: 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 32px;
+	max-height: 40px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCheckbox"] div,
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCheckbox"] div,
+div[class*="gridRow"] > div[class*="gridCheckbox"] div {
+  width: 18px;
+  height: 18px;
+  margin: 0px;
+  border-radius: 50px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"]div[class*="gridCheckbox"] div[class*="gridCheckboxInner"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"]div[class*="gridCheckbox"] div[class*="gridCheckboxInner"], 
+div[class*="gridRow"] > div[class*="gridCell"]div[class*="gridCheckbox"] div[class*="gridCheckboxInner"] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridDragMove"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridDragMove"], 
+div[class*="gridRow"] > div[class*="gridDragMove"] {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+	min-width: 30px !important;
+	width: 30px;
+	max-width: 30px;
+	padding: 0 !important;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"]  span[class*="gridMoveIcon"],
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"]  span[class*="gridDragIcon"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridDragMove"]  span[class*="gridMoveIcon"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridDragMove"]  span[class*="gridDragIcon"],
+div[class*="gridRow"] > div[class*="gridCell"] span[class*="gridMoveIcon"],
+div[class*="gridRow"] > div[class*="gridCell"] span[class*="gridDragIcon"] {
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	font-size: 18px;
+	color: #3292dc;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridDocsCount"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridDocsCount"],
+div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridDocsCount"] {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	text-shadow: 1px 0 2px rgba(45, 125, 245, 0.5);
+	margin: 0;
+	width: 100%;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridCommentCount"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridCommentCount"],
+div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridCommentCount"] {
+	display: flex;
+	align-items: center;
+	text-shadow: 1px 0 2px rgba(45, 125, 245, 0.5);
+	margin: 0;
+	width: 100%;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridCommentCount"] i,
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridCommentCount"] i,
+div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridCommentCount"] i {
+  padding-right: 4px;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridSubtaskValue"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridSubtaskValue"],
+div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridSubtaskValue"] {
+  display: flex;
+  white-space: normal;
+  overflow: hidden;
+}
+
+div[class*="gridParentTaskInner"] > div[class*="gridSubTask"] > div[class*="gridSubTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridSubtaskValue"] span[class*="gridSubtaskValueInner"],
+div[class*="gridParentTaskInner"] > div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridSubtaskValue"] span[class*="gridSubtaskValueInner"],
+div[class*="gridRow"] > div[class*="gridCell"] > button[class*="gridSubtaskValue"] span[class*="gridSubtaskValueInner"] {
+  text-indent: 30px;
+}

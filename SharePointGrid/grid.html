@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.graph.office.net/prod/css/fabric-js/fabric.min.css" />
+    <link rel="stylesheet" href="https://cdn.graph.office.net/prod/css/fabric-js/fabric.components.min.css" />
+    <script src="https://cdn.graph.office.net/prod/Scripts/fabric-js/fabric.min.js"></script>
+    
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="grid.css" />
+</head>
+
+<body>
+    <div class="ms-Grid gridWrapper">
+        <div class="gridGroup">
+            <div class="gridGroupInner ">
+                <div class="gridRow gridHeaderRow ">
+                    <div class="gridCell gridCheckbox">
+                        <div class="ms-Checkbox is-enabled gridCheckboxInner root-322"><input type="checkbox"
+                                class="input-323" id="checkbox-320"><label class="ms-Checkbox-label label-324"
+                                for="checkbox-320">
+                                <div class="ms-Checkbox-checkbox checkbox-325"><i data-icon-name="CheckMark"
+                                        class="ms-Checkbox-checkmark checkmark-328" role="presentation"></i></div>
+                            </label></div>
+                    </div>
+                    <div class="gridCell gridCollapseAdd"></div>
+                    <div class="gridCell" id="Index" style="width: 55px;">
+                        <button type="button" class="ms-Button ms-Button--action ms-Button--command root-329"
+                            data-is-focusable="true" aria-expanded="false" aria-haspopup="true">
+                            <div class="ms-Button-flexContainer flexContainer-330"><i data-icon-name="SortUp"
+                                    class="ms-Button-icon icon-310" role="presentation"></i>
+                                <div class="ms-Button-textContainer textContainer-331">
+                                    <div class="ms-Button-label label-332" id="id__321">#</div>
+                                </div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-314"
+                                    role="presentation"></i>
+                            </div>
+                        </button></div>
+                    <div class="gridCell" id="Title" style="width: 200px;"><button type="button"
+                            class="ms-Button ms-Button--action ms-Button--command root-329" data-is-focusable="true"
+                            aria-expanded="false" aria-haspopup="true">
+                            <div class="ms-Button-flexContainer flexContainer-330"><i class="ms-Button-icon icon-333"
+                                    role="presentation"></i>
+                                <div class="ms-Button-textContainer textContainer-331">
+                                    <div class="ms-Button-label label-332" id="id__324">Task name</div>
+                                </div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-314"
+                                    role="presentation"></i>
+                            </div>
+                        </button></div>
+                    <div class="gridCell" id="ResponsibleOrStatus" style="width: 200px;"><button type="button"
+                            class="ms-Button ms-Button--action ms-Button--command root-329" data-is-focusable="true"
+                            aria-expanded="false" aria-haspopup="true">
+                            <div class="ms-Button-flexContainer flexContainer-330"><i class="ms-Button-icon icon-333"
+                                    role="presentation"></i>
+                                <div class="ms-Button-textContainer textContainer-331">
+                                    <div class="ms-Button-label label-332" id="id__327">Responsible party / Status</div>
+                                </div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-314"
+                                    role="presentation"></i>
+                            </div>
+                        </button></div>
+                    <div class="gridCell" id="Modified" style="width: 200px;"><button type="button"
+                            class="ms-Button ms-Button--action ms-Button--command root-329" data-is-focusable="true"
+                            aria-expanded="false" aria-haspopup="true">
+                            <div class="ms-Button-flexContainer flexContainer-330"><i class="ms-Button-icon icon-333"
+                                    role="presentation"></i>
+                                <div class="ms-Button-textContainer textContainer-331">
+                                    <div class="ms-Button-label label-332" id="id__330">Last updated</div>
+                                </div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-314"
+                                    role="presentation"></i>
+                            </div>
+                        </button></div>
+                    <div class="gridCell" id="DocsCount" style="width: 55px;"><button type="button"
+                            data-automation-id="test" class="ms-Button ms-Button--action ms-Button--command root-329"
+                            data-is-focusable="true" aria-expanded="false" aria-haspopup="true">
+                            <div class="ms-Button-flexContainer flexContainer-330"><i class="ms-Button-icon icon-333"
+                                    role="presentation"></i><span class="gridHeaderIcon"><i
+                                        class="ms-Icon ms-Icon--TextDocument" aria-hidden="true"></i></span><i
+                                    data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-314"
+                                    role="presentation"></i></div>
+                        </button></div>
+                    <div class="gridCell" id="CommentsCount" style="width: 55px;"><button type="button"
+                            data-automation-id="test" class="ms-Button ms-Button--action ms-Button--command root-329"
+                            data-is-focusable="true" aria-expanded="false" aria-haspopup="true">
+                            <div class="ms-Button-flexContainer flexContainer-330"><i class="ms-Button-icon icon-333"
+                                    role="presentation"></i><span class="gridHeaderIcon"><i
+                                        class="ms-Icon ms-Icon--Comment" aria-hidden="true"></i></span><i
+                                    data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-314"
+                                    role="presentation"></i></div>
+                        </button></div>
+                </div>
+                <div class="gridCategory_27346895 " id="true">
+                    <div class="gridCategoryTitle_27346895 gridRow_27346895 " id="Category 2">
+                        <div class="gridCell_27346895 gridCheckbox_27346895">
+                            <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258"><input
+                                    type="checkbox" class="input-259" id="checkbox-90"><label
+                                    class="ms-Checkbox-label label-260" for="checkbox-90">
+                                    <div class="ms-Checkbox-checkbox checkbox-261"><i data-icon-name="CheckMark"
+                                            class="ms-Checkbox-checkmark checkmark-264" role="presentation"></i></div>
+                                </label></div>
+                        </div>
+                        <div class="gridCell_27346895 gridCollapseAdd_27346895"><span class="gridCollapse_27346895 "><i
+                                    class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i></span><span
+                                class="gridAddTask_27346895"><i class="ms-Icon ms-Icon--CircleAdditionSolid"
+                                    aria-hidden="true"></i></span></div>
+                        <div class="gridCell_27346895">CATEGORY 2 (0 of 5 complete)</div>
+                    </div>
+                    <div class="gridParentTask_27346895 ">
+                        <div class="gridParentTaskInner_27346895">
+                            <div title="Click and drag to move to another category" id="Task 3215"
+                                class="gridRow_27346895 " draggable="true">
+                                <div class="gridCell_27346895 gridCheckbox_27346895">
+                                    <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258"><input
+                                            type="checkbox" class="input-259" id="checkbox-222"><label
+                                            class="ms-Checkbox-label label-260" for="checkbox-222">
+                                            <div class="ms-Checkbox-checkbox checkbox-261"><i data-icon-name="CheckMark"
+                                                    class="ms-Checkbox-checkmark checkmark-264"
+                                                    role="presentation"></i></div>
+                                        </label></div>
+                                </div>
+                                <div class="gridCell_27346895 gridDragMove_27346895"><button class="ms-Button">
+                                    <span class="ms-Button-label">Create Account</span> 
+                                  </button>
+                                </div>
+                                <div class="gridCell_27346895" id="Index" style="width: 55px;"><span
+                                        class="gridOrderNumber_27346895">14</span></div>
+                                <div class="gridCell_27346895" id="Title" style="width: 200px;"><button type="button"
+                                        class="ms-Link root-270"><span class="gridSubtaskValueInner_27346895">Task
+                                            32</span></button></div>
+                                <div class="gridCell_27346895" id="ResponsibleOrStatus"
+                                    style="background-color: rgb(63, 171, 254); color: rgb(255, 255, 255); width: 200px;">
+                                    <span>Lender/In Progress</span></div>
+                                <div class="gridCell_27346895" id="Modified" style="width: 200px;"><time
+                                        datetime="2019-12-31T09:26:39.000Z"
+                                        title="Tuesday, December 31, 2019, 2:56:39 PM">3 months ago</time></div>
+                                <div class="gridCell_27346895" id="DocsCount" style="width: 55px;"><button type="button"
+                                        class="ms-Link gridCommentCount_27346895 root-270"><i
+                                            class="ms-Icon ms-Icon--TextDocument" aria-hidden="true"></i>0</button>
+                                </div>
+                                <div class="gridCell_27346895" id="CommentsCount" style="width: 55px;"><button
+                                        type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                            class="ms-Icon ms-Icon--Comment" aria-hidden="true"></i>0</button></div>
+                            </div>
+                            <div class="gridSubTask_27346895">
+                                <div class="gridSubTaskInner_27346895">
+                                    <div id="Department Case File16" title="Click and drag to move to another category"
+                                        class="gridRow_27346895 " draggable="true">
+                                        <div class="gridCell_27346895 gridCheckbox_27346895">
+                                            <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258">
+                                                <input type="checkbox" class="input-259" id="checkbox-223"><label
+                                                    class="ms-Checkbox-label label-260" for="checkbox-223">
+                                                    <div class="ms-Checkbox-checkbox checkbox-261"><i
+                                                            data-icon-name="CheckMark"
+                                                            class="ms-Checkbox-checkmark checkmark-264"
+                                                            role="presentation"></i></div>
+                                                </label></div>
+                                        </div>
+                                        <div class="gridCell_27346895 gridDragMove_27346895"><span
+                                                class="gridMoveIcon_27346895"><i
+                                                    title="Click and drag to reorder within category"
+                                                    class="ms-Icon ms-Icon--GlobalNavButton"
+                                                    aria-hidden="true"></i></span></div>
+                                        <div class="gridCell_27346895" id="Index" style="width: 55px;"></div>
+                                        <div class="gridCell_27346895" id="Title" style="width: 200px;"><button
+                                                type="button" class="ms-Link gridSubtaskValue_27346895 root-270">1<span
+                                                    class="gridSubtaskValueInner_27346895">Department Case
+                                                    File</span></button></div>
+                                        <div class="gridCell_27346895" id="ResponsibleOrStatus"
+                                            style="background-color: rgb(61, 152, 70); color: rgb(255, 255, 255); width: 200px;">
+                                            <span>Lender/Completed</span></div>
+                                        <div class="gridCell_27346895" id="Modified" style="width: 200px;"><time
+                                                datetime="2020-03-31T10:37:41.000Z"
+                                                title="Tuesday, March 31, 2020, 4:07:41 PM">a week ago</time></div>
+                                        <div class="gridCell_27346895" id="DocsCount" style="width: 55px;"><button
+                                                type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                    class="ms-Icon ms-Icon--TextDocument"
+                                                    aria-hidden="true"></i>0</button></div>
+                                        <div class="gridCell_27346895" id="CommentsCount" style="width: 55px;"><button
+                                                type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                    class="ms-Icon ms-Icon--Comment" aria-hidden="true"></i>0</button>
+                                        </div>
+                                    </div>
+                                    <div id="TASK 19" title="Click and drag to move to another category"
+                                        class="gridRow_27346895 " draggable="true">
+                                        <div class="gridCell_27346895 gridCheckbox_27346895">
+                                            <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258">
+                                                <input type="checkbox" class="input-259" id="checkbox-224"><label
+                                                    class="ms-Checkbox-label label-260" for="checkbox-224">
+                                                    <div class="ms-Checkbox-checkbox checkbox-261"><i
+                                                            data-icon-name="CheckMark"
+                                                            class="ms-Checkbox-checkmark checkmark-264"
+                                                            role="presentation"></i></div>
+                                                </label></div>
+                                        </div>
+                                        <div class="gridCell_27346895 gridDragMove_27346895"><span
+                                                class="gridMoveIcon_27346895"><i
+                                                    title="Click and drag to reorder within category"
+                                                    class="ms-Icon ms-Icon--GlobalNavButton"
+                                                    aria-hidden="true"></i></span></div>
+                                        <div class="gridCell_27346895" id="Index" style="width: 55px;"></div>
+                                        <div class="gridCell_27346895" id="Title" style="width: 200px;"><button
+                                                type="button" class="ms-Link gridSubtaskValue_27346895 root-270">2<span
+                                                    class="gridSubtaskValueInner_27346895">TASK 1</span></button></div>
+                                        <div class="gridCell_27346895" id="ResponsibleOrStatus"
+                                            style="background-color: rgb(255, 238, 128); color: rgb(0, 0, 0); width: 200px;">
+                                            <span>Borrower/New Project &amp; Existing Project , New Status</span></div>
+                                        <div class="gridCell_27346895" id="Modified" style="width: 200px;"><time
+                                                datetime="2020-03-31T10:03:05.000Z"
+                                                title="Tuesday, March 31, 2020, 3:33:05 PM">a week ago</time></div>
+                                        <div class="gridCell_27346895" id="DocsCount" style="width: 55px;"><button
+                                                type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                    class="ms-Icon ms-Icon--TextDocument"
+                                                    aria-hidden="true"></i>0</button></div>
+                                        <div class="gridCell_27346895" id="CommentsCount" style="width: 55px;"><button
+                                                type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                    class="ms-Icon ms-Icon--Comment" aria-hidden="true"></i>0</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gridSubCategory_27346895 " id="true">
+                        <div class="gridSubCategoryTitle_27346895 gridRow_27346895 " id="Sub Category 2_1">
+                            <div class="gridCell_27346895 gridCheckbox_27346895">
+                                <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258"><input
+                                        type="checkbox" class="input-259" id="checkbox-94"><label
+                                        class="ms-Checkbox-label label-260" for="checkbox-94">
+                                        <div class="ms-Checkbox-checkbox checkbox-261"><i data-icon-name="CheckMark"
+                                                class="ms-Checkbox-checkmark checkmark-264" role="presentation"></i>
+                                        </div>
+                                    </label></div>
+                            </div>
+                            <div class="gridCell_27346895 gridCollapseAdd_27346895"><span
+                                    class="gridCollapse_27346895 "><i class="ms-Icon ms-Icon--ChevronDown"
+                                        aria-hidden="true"></i></span><span class="gridAddTask_27346895"><i
+                                        class="ms-Icon ms-Icon--CircleAdditionSolid" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="gridCell_27346895">SUB CATEGORY 2_1 (0 of 2 complete)</div>
+                        </div>
+                        <div class="gridParentTask_27346895 ">
+                            <div class="gridParentTaskInner_27346895">
+                                <div title="Click and drag to move to another category" id="TASK 210"
+                                    class="gridRow_27346895 " draggable="true">
+                                    <div class="gridCell_27346895 gridCheckbox_27346895">
+                                        <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258"><input
+                                                type="checkbox" class="input-259" id="checkbox-225"><label
+                                                class="ms-Checkbox-label label-260" for="checkbox-225">
+                                                <div class="ms-Checkbox-checkbox checkbox-261"><i
+                                                        data-icon-name="CheckMark"
+                                                        class="ms-Checkbox-checkmark checkmark-264"
+                                                        role="presentation"></i></div>
+                                            </label></div>
+                                    </div>
+                                    <div class="gridCell_27346895 gridDragMove_27346895"><span
+                                            class="gridMoveIcon_27346895"><i
+                                                title="Click and drag to reorder within category"
+                                                class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="gridCell_27346895" id="Index" style="width: 55px;"><span
+                                            class="gridOrderNumber_27346895">15</span></div>
+                                    <div class="gridCell_27346895" id="Title" style="width: 200px;"><button
+                                            type="button" class="ms-Link root-270"><span
+                                                class="gridSubtaskValueInner_27346895">TASK 2</span></button></div>
+                                    <div class="gridCell_27346895" id="ResponsibleOrStatus"
+                                        style="background-color: rgb(63, 171, 254); color: rgb(255, 255, 255); width: 200px;">
+                                        <span>Lender Counsel</span></div>
+                                    <div class="gridCell_27346895" id="Modified" style="width: 200px;"><time
+                                            datetime="2019-12-31T09:26:46.000Z"
+                                            title="Tuesday, December 31, 2019, 2:56:46 PM">3 months ago</time></div>
+                                    <div class="gridCell_27346895" id="DocsCount" style="width: 55px;"><button
+                                            type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                class="ms-Icon ms-Icon--TextDocument" aria-hidden="true"></i>0</button>
+                                    </div>
+                                    <div class="gridCell_27346895" id="CommentsCount" style="width: 55px;"><button
+                                            type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                class="ms-Icon ms-Icon--Comment" aria-hidden="true"></i>0</button></div>
+                                </div>
+                                <div class="gridSubTask_27346895">
+                                    <div class="gridSubTaskInner_27346895">
+                                        <div id="Category 2 Sub task18"
+                                            title="Click and drag to move to another category" class="gridRow_27346895 "
+                                            draggable="true">
+                                            <div class="gridCell_27346895 gridCheckbox_27346895">
+                                                <div class="ms-Checkbox is-enabled gridCheckboxInner_27346895 root-258">
+                                                    <input type="checkbox" class="input-259" id="checkbox-226"><label
+                                                        class="ms-Checkbox-label label-260" for="checkbox-226">
+                                                        <div class="ms-Checkbox-checkbox checkbox-261"><i
+                                                                data-icon-name="CheckMark"
+                                                                class="ms-Checkbox-checkmark checkmark-264"
+                                                                role="presentation"></i></div>
+                                                    </label></div>
+                                            </div>
+                                            <div class="gridCell_27346895 gridDragMove_27346895"><span
+                                                    class="gridMoveIcon_27346895"><i
+                                                        title="Click and drag to reorder within category"
+                                                        class="ms-Icon ms-Icon--GlobalNavButton"
+                                                        aria-hidden="true"></i></span></div>
+                                            <div class="gridCell_27346895" id="Index" style="width: 55px;"></div>
+                                            <div class="gridCell_27346895" id="Title" style="width: 200px;"><button
+                                                    type="button"
+                                                    class="ms-Link gridSubtaskValue_27346895 root-270">1<span
+                                                        class="gridSubtaskValueInner_27346895">Category 2 Sub
+                                                        task</span></button></div>
+                                            <div class="gridCell_27346895" id="ResponsibleOrStatus"
+                                                style="background-color: inherit; color: rgb(0, 0, 0); width: 200px;">
+                                                <span></span></div>
+                                            <div class="gridCell_27346895" id="Modified" style="width: 200px;"><time
+                                                    datetime="2020-03-24T14:07:14.000Z"
+                                                    title="Tuesday, March 24, 2020, 7:37:14 PM">2 weeks ago</time></div>
+                                            <div class="gridCell_27346895" id="DocsCount" style="width: 55px;"><button
+                                                    type="button" class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                        class="ms-Icon ms-Icon--TextDocument"
+                                                        aria-hidden="true"></i>0</button></div>
+                                            <div class="gridCell_27346895" id="CommentsCount" style="width: 55px;">
+                                                <button type="button"
+                                                    class="ms-Link gridCommentCount_27346895 root-270"><i
+                                                        class="ms-Icon ms-Icon--Comment"
+                                                        aria-hidden="true"></i>0</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="group-1-category-2" class="gridTempPlaceholder_27346895"><span><i></i>Drop to CATEGORY
+                            2</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
